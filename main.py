@@ -11,3 +11,5 @@ else:
 r = requests.get(url)
 
 print("Download about to start")
+
+soup = BeautifulSoup(r.content, features="lxml")
