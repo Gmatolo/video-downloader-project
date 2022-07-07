@@ -1,7 +1,8 @@
 
 import requests
 from bs4 import BeautifulSoup
-import sys 
+import sys
+import re
 
 if len(sys.argv) > 1:
     url = sys.argv[1]
