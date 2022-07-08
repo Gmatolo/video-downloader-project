@@ -30,3 +30,6 @@ result_mp4 = re.search("(?P<url>https?://[^\s]+)(mp4)", result).group("url")
 mp4_url = result_mp4.split('"')[0]
 
 print("Downloading video from ..... " + mp4_url)
+
+# Stores the filename in mp4 format
+file_name = mp4_url.split("/")[len(mp4_url.split("/"))-1].split('?')[0]
