@@ -28,3 +28,5 @@ result_mp4 = re.search("(?P<url>https?://[^\s]+)(mp4)", result).group("url")
 
 #store the url in a varible
 mp4_url = result_mp4.split('"')[0]
+
+print("Downloading video from ..... " + mp4_url)
