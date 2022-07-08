@@ -23,4 +23,5 @@ for val in soup.findAll("script"):
     if(re.search("talkPage.init",str(val))) is not None:
         result = str(val)
 
+#from the returned result, select the first url that matches https...mp4
 result_mp4 = re.search("(?P<url>https?://[^\s]+)(mp4)", result).group("url")
