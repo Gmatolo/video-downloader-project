@@ -39,3 +39,7 @@ print("Storing video in ..... " + file_name)
 
 #pulls and stores the url content to a varible
 r = requests.get(mp4_url)
+
+# Writes content to the specified filename
+with open(file_name,'wb') as f:
+  f.write(r.content)
