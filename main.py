@@ -36,3 +36,6 @@ file_name = mp4_url.split("/")[len(mp4_url.split("/"))-1].split('?')[0]
 
 # Indicates video download location
 print("Storing video in ..... " + file_name)
+
+#pulls and stores the url content to a varible
+r = requests.get(mp4_url)
